@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to my shop | Shoppy </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- bootstrap links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- fonts links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+
+  <style>
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .my_card {
+      height: 300px;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 1200px) {
+      #carousal_button {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- top navbar -->
+  <div class="top-navbar">
+    <p>Welcome to Shoppy</p>
+    <div class="icons">
+      <a href="login.html" class="btn btn-dark text-light">Login</a>
+      <a href="register.html" class="btn btn-dark text-light">Register</a>
+    </div>
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">Shoppy</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- locho chhe-------------- -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">    
+          
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="product.html">Other Product</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Category
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#mobile">Mobiles</a></li>
+              <li><a class="dropdown-item" href="#electronics">Electronics</a></li>
+              <li><a class="dropdown-item" href="#fashion">Fashion</a></li>
+              <li><a class="dropdown-item" href="#grocery">Grocery</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- carousal -->
+  <div id="carousal_button" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="slide_show/slide_show1.jpeg" class="d-block w-100" alt="Slide 1">
+      </div>
+      
+      <div class="carousel-item">
+        <img src="slide_show/slide_show2.webp" class="d-block w-100" alt="Slide 2">
+      </div>
+
+      <div class="carousel-item">
+        <img src="slide_show/slide_show3.webp" class="d-block w-100" alt="Slide 3">
+      </div>
+    </div>
+
+
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousal_button"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousal_button"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+
+
+  <!-- mobiles -->
+  <section id="mobile">
+    <div class="container" id="product-cards">
+      <div class="row" style="margin-top: 30px;">
+        <div class="text-center display-6 bg-dark text-light">Mobiles</div>
+
+        <!-- card 1 -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="images/phone1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Samsung S24 Ultra</h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 107899* <button class="btn btn-secondary btn-add-to-cart" data-product-name="Samsung S24 Ultra"
+                  data-product-price="107899">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button></h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/phone2.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Iphone 15 Pro Max</h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 145999* <button class="btn btn-secondary btn-add-to-cart" data-product-name="Iphone 15 Pro Max"
+                  data-product-price="145999">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button></h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/phone3.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Vivo X90 Pro</h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star "></i>
+              </div>
+              <h2>₹ 89999*<button class="btn btn-secondary btn-add-to-cart" data-product-name="Vivo X90 Pro"
+                  data-product-price="89999">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button></h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/phone4.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Oneplus 11</h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 59999* <button class="btn btn-secondary btn-add-to-cart" data-product-name="Oneplus 11"
+                  data-product-price="59999">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button></h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- all cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- electronics -->
+  <section id="electronics">
+    <div class="container" id="product-cards">
+      <div class="row" style="margin-top: 30px;">
+        <div class="text-center display-6 bg-dark text-light">Electronics</div>
+
+        <!-- card 1 -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/tv3.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Sony Bravia 65in</h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 90599* <button class="btn btn-secondary btn-add-to-cart" data-product-name="Sony Bravia 65in"
+                  data-product-price="90599">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button></h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/fridge4.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Samsung side-by-side</h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 65499* <button class="btn btn-secondary btn-add-to-cart" data-product-name="Samsung side-by-side"
+                  data-product-price="65499">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button></h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/wm4.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">BOSCH Series 4</h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 34499* <button class="btn btn-secondary btn-add-to-cart" data-product-name="BOSCH Series 4"
+                  data-product-price="34499">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button></h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- card  4-->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/laptop1.png" alt="">
+            <div class="card-body">
+              <h3 class="text-center">Asus Vivobook</h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 67899* <button class="btn btn-secondary btn-add-to-cart" data-product-name="Asus Vivobook"
+                  data-product-price="67899">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button></h2>
+            </div>
+          </div>
+        </div>
+        <!-- all card s -->
+      </div>
+    </div>
+
+  </section>
+
+  <!-- fashion -->
+  <section id="fashion">
+    <div class="container" id="product-cards">
+      <div class="row" style="margin-top: 30px;">
+        <div class="text-center display-6 bg-dark text-light">Fashion</div>
+
+        <!-- card 1 -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="images/fashion1.webp" alt="" class="my_card">
+            <div class="card-body">
+              <h3 class="text-center">Men Solid Grey Track Pants</h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 349*<button class="btn btn-secondary btn-add-to-cart" data-product-name="Men Solid Grey Track Pants"
+                  data-product-price="349">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button></h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/fashion2.webp" alt="" class="my_card">
+            <div class="card-body">
+              <h3 class="text-center">Men Printed Round Maroon T-Shirt
+              </h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 249* <button class="btn btn-secondary btn-add-to-cart"
+                  data-product-name="Men Printed Round Maroon T-Shirt" data-product-price="249">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button></h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/fashion3.webp" alt="" class="my_card">
+            <div class="card-body">
+              <h3 class="text-center">Men Regular Fit Solid Spread Collar Formal</h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 299* <button class="btn btn-secondary btn-add-to-cart"
+                  data-product-name="Men Regular Fit Solid Spread Collar Formal" data-product-price="299">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button></h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./images/fashion4.webp" alt="" class="my_card">
+            <div class="card-body">
+              <h3 class="text-center">Running Shoes For Men (Grey, Green)
+              </h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 499* <button class="btn btn-secondary btn-add-to-cart"
+                  data-product-name="Running Shoes For Men (Grey, Green)" data-product-price="499">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button></h2>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- grocery -->
+  <section id="grocery">
+    <div class="container" id="product-cards">
+      <div class="row" style="margin-top: 30px;">
+        <div class="text-center display-6 bg-dark text-light">Grocery</div>
+
+        <!-- card 1 -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="images/grocery1.webp" alt="" class="my_card">
+            <div class="card-body">
+              <h3 class="text-center">RUNutz Daily Nuts Cashews (Kaju) <br> (250 g)
+              </h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 159*
+                <button class="btn btn-secondary btn-add-to-cart"
+                  data-product-name="RUNutz Daily Nuts Cashews (Kaju) (250 g)" data-product-price="159">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2 -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="images/grocery2.webp" alt="" class="my_card">
+            <div class="card-body">
+              <h3 class="text-center">Happilo Premium Dried Afghani Anjeer/ Figs (190 g)
+              </h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 338*
+                <button class="btn btn-secondary btn-add-to-cart"
+                  data-product-name="Happilo Premium Dried Afghani Anjeer/ Figs (190 g)" data-product-price="338">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="images/grocery3.webp" alt="" class="my_card">
+            <div class="card-body">
+              <h3 class="text-center">Nutraj California Inshell Walnuts (Akhrot) (1 kg)
+              </h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 370*
+                <button class="btn btn-secondary btn-add-to-cart"
+                  data-product-name="Nutraj California Inshell Walnuts (Akhrot) (1 kg)" data-product-price="370">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 4 -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="images/grocery4.webp" alt="" class="my_card">
+            <div class="card-body">
+              <h3 class="text-center">INDIA GATE Mini Mogra Basmati Rice (10 kg)
+              </h3>
+              <p class="text-center">* Lowest price ever inclusive of offers</p>
+              <div class="star text-center">
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+                <i class="fa-solid fa-star checked"></i>
+              </div>
+              <h2>₹ 580*
+                <button class="btn btn-secondary btn-add-to-cart"
+                  data-product-name="INDIA GATE Mini Mogra Basmati Rice (10 kg)" data-product-price="580">
+                  <li class="fa-solid fa-cart-shopping"></li>
+                </button>
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- all cards -->
+      </div>
+    </div>
+  </section>
+  <!-- product cards -->
+
+
+  <!-- other cards -->
+  <div class="container" id="other-cards">
+    <div class="row">
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c1.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Best Laptop</h3>
+            <h5>Latest Collection</h5>
+            <p>Up To 50% Off</p>
+            <button id="shopnow">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/c2.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Best Headphone</h3>
+            <h5>Latest Collection</h5>
+            <p>Up To 50% Off</p>
+            <button id="shopnow">Shop Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="container" id="other">
+    <div class="row">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/my_grocery.avif" alt="">
+          <div class="card-img-overlay">
+            <h3>Grocery</h3>
+            <p>Latest collection Up To 25% Off</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/my_electronics.png" alt="">
+          <div class="card-img-overlay">
+            <h3>Electronics Prodeuct</h3>
+            <p>Latest collection Up To 50% Off</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./images/my_fashion.avif" alt="">
+          <div class="card-img-overlay">
+            <h3>Clothes</h3>
+            <p>Latest collection Up To 35% Off</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- offer zone -->
+  <div class="container" id="offer">
+    <div class="row">
+
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <h3>Free Shipping</h3>
+        <p>On order above ₹ 9999</p>
+      </div>
+
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-rotate-left"></i>
+        <h3>Free Returns</h3>
+        <p>Within 30 days</p>
+      </div>
+
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-truck"></i>
+        <h3>Fast Delivery</h3>
+        <p>World Wide</p>
+      </div>
+
+      <div class="col-md-3 py-3 py-md-0">
+        <i class="fa-solid fa-thumbs-up"></i>
+        <h3>Big choice</h3>
+        <p>Of products</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- follow -->
+  <div class="container" id="newslater">
+    <h3 class="text-center">Follow for new Deals & Discounts</h3>
+    <div class="input text-center">
+      <button class="btn btn-outline-dark">FOLLOW</button>
+    </div>
+  </div>
+
+  <!-- cart -->
+  <div class="container mt-5">
+    <div class="card">
+      <div class="card-header">
+        Your Cart
+      </div>
+      <div class="card-body" id="cart">
+        <!-- cart items using java script -->
+      </div>
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <footer id="footer" class="bg-dark">
+    <div class="footer-top bg-dark">
+      <div class="container">
+        <div class="row">
+
+
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3 class="text-info">Offline Shop</h3>
+            <p>
+              Ahmedabad <br>
+              Mumbai <br>
+              Delhi <br>
+              Chennai <br>
+              Gurgoan <br>
+              Kolkatta <br>
+            </p>
+            <strong>Phone:</strong> +91 9104296778 <br>
+            <strong>Email:</strong> smitbhut27@gmail.com <br>
+          </div>
+
+
+          
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 class="text-info">Usefull Links</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 class="text-info">Our Services</h4>
+            <ul>
+              <li><a href="#">Fast Delivery</a></li>
+              <li><a href="#">COD availability</a></li>
+              <li><a href="#">Good Services</a></li>
+              <li><a href="#">Quality Of Product</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4 class="text-info">Our Social Networks</h4>
+            <p>Follow our social media pages for more latest deals and products.</p>
+
+            <div class="socail-links mt-3">
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-skype"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Shoppy. </span></strong>All Rights Reserved
+      </div>
+    </div>
+  </footer>
+  <!-- footer -->
+
+
+  <a href="#" class="arrow"><i><img src="./images/arrow.png" alt=""></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+    
+</body>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all add-to-cart buttons
+    var addToCartButtons = document.querySelectorAll(".btn-add-to-cart");
+
+    // Add click event listener to each button
+    addToCartButtons.forEach(function (button) {
+      button.addEventListener("click", function () {
+        // Get product details from the button's data attributes
+        var productName = button.getAttribute("data-product-name");
+        var productPrice = parseFloat(button.getAttribute("data-product-price"));
+
+        // Create a new item object
+        var item = {
+          name: productName,
+          price: productPrice
+        };
+
+        // Add the item to the cart
+        addToCart(item);
+      });
+    });
+
+    // Function to add item to the cart
+    function addToCart(item) {
+      var cart = document.getElementById("cart");
+
+      // Create a new cart item element
+      var cartItem = document.createElement("div");
+      cartItem.classList.add("cart-item");
+      cartItem.innerHTML = `
+        <p>${item.name}</p>
+        <p>${item.price}</p><hr>
+      `;
+
+      // Append the cart item to the cart
+      cart.appendChild(cartItem);
+    }
+  });
+</script>
+
+
+</html>
